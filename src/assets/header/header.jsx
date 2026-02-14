@@ -2,18 +2,51 @@ import styles from "./header.module.css"
 
 function Header() {
     
+    const navItemsNav = [
+        { name: 'Categories', link: '/categories' },
+        { name: 'Collections', link: '/collections' },
+        { name: 'Contact', link: '/contact' },
+        { name: 'About', link: '/about' }
+    ];
+
+    const navItemsCtrl = [
+        { name: 'Cart', link: '/pages/cart' },
+        { name: 'Account', link: '/pages/account' },
+        { name: 'menu', link: '/pages/menu' },
+    ];
+
     return(
-        <header>
+        <header className={styles.header}>
+
             <h1 className = {styles.h1} >O-Shop</h1>
 
-            <nav>
+            <nav className = {styles.navbar}>
 
-                <ul>
+                <ul className={styles.navbar_links}>
 
-                    <li className = {styles.li} ><a>Categories</a></li>
-                    <li className = {styles.li} ><a>Collections</a></li>
-                    <li className = {styles.li} ><a>Contact</a></li>
-                    <li className = {styles.li} ><a>About</a></li>
+                        {navItemsNav.map((item) => (
+
+                        <li key={item.name} className={styles.li}>
+
+                            <a href={item.link}>{item.name}</a>
+
+                        </li>
+
+                         ))}
+
+                </ul>
+
+                <ul className={styles.navbar_links}>
+
+                        {navItemsCtrl.map((item) => (
+
+                        <li key={item.name} className={styles.li}>
+
+                            <a href={item.link}>{item.name}</a>
+
+                        </li>
+
+                         ))}
 
                 </ul>
             </nav>
