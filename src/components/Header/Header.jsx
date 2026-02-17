@@ -1,4 +1,4 @@
-import styles from "./header.module.css"
+import styles from "./Header.module.css"
 
 function Header() {
     
@@ -27,9 +27,7 @@ function Header() {
                         {navItemsNav.map((item) => (
 
                         <li key={item.name} className={styles.li}>
-
                             <a href={item.link}>{item.name}</a>
-
                         </li>
 
                          ))}
@@ -41,9 +39,7 @@ function Header() {
                         {navItemsCtrl.map((item) => (
 
                         <li key={item.name} className={styles.li}>
-
                             <a href={item.link}>{item.name}</a>
-
                         </li>
 
                          ))}
