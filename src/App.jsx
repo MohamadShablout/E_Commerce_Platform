@@ -1,9 +1,10 @@
-import Header from "./components/Header/Header.jsx"
+import Home from "./pages/Home.jsx"
+import AppRoutes from "./routes/AppRoutes.jsx";
 
 function App() {
     return(
         <>
-        <Header />
+        <AppRoutes />
         </>
     );
 }
