@@ -1,6 +1,4 @@
-body {
-    margin: 0;
-}
+
 
 .header {
 
@@ -8,12 +6,10 @@ body {
     justify-content: center;
     background-color: #2C2C2C;
     padding: 0rem 2rem;
-    
-    color: #F8F8F8;
-    
+        
 }
 
-h1 {
+.h1Header {
 
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;

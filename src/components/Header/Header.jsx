@@ -2,11 +2,11 @@ import styles from "./Header.module.css"
 
 function Header() {
     
+    // TODO : Add Comments
+    
     const navItemsNav = [
         { name: 'Categories', link: '/categories' },
         { name: 'Collections', link: '/collections' },
-        { name: 'Contact', link: '/contact' },
-        { name: 'About', link: '/about' }
     ];
 
     const navItemsCtrl = [
@@ -18,7 +18,7 @@ function Header() {
     return(
         <header className={styles.header}>
 
-            <h1 className = {styles.h1} style={{ color: "#D4AF37" }}>O-Shop</h1>
+            <h1 className = {styles.h1Header} style={{ color: "#D4AF37" }}>O-Shop</h1>
 
             <nav className = {styles.navbar}>
 
