@@ -18,7 +18,7 @@ function Header() {
     return(
         <header className={styles.header}>
 
-            <h1 className = {styles.h1} >O-Shop</h1>
+            <h1 className = {styles.h1} style={{ color: "#D4AF37" }}>O-Shop</h1>
 
             <nav className = {styles.navbar}>
 

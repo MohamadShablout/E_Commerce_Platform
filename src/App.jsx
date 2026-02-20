@@ -1,4 +1,3 @@
-import Home from "./pages/Home.jsx"
 import AppRoutes from "./routes/AppRoutes.jsx";
 
 function App() {

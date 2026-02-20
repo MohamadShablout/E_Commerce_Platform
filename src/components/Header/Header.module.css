@@ -6,8 +6,10 @@ body {
 
     display: flex;
     justify-content: center;
-    background-color: hsl(103, 100%, 28%);
+    background-color: #2C2C2C;
     padding: 0rem 2rem;
+    
+    color: #F8F8F8;
     
 }
 
