@@ -1,43 +1,33 @@
-
-
 .header {
-
     display: flex;
     justify-content: center;
     background-color: #2C2C2C;
     padding: 0rem 2rem;
-        
+      
 }
 
 .h1Header {
-
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
-
+    color: #D4AF37;
 }
 
 .navbar {
-
     display: flex;
     flex: 1;
     justify-content: space-between;
     align-items: center;
     margin-left: 2rem;
-
 }
 
 .navbar_links {
-
     list-style: none;
     display: flex;
-
 }
 
-li {
-
+.liHeader {
     font-size: 1.2rem;
     padding-left: 1em;
-
 }
 
 a {

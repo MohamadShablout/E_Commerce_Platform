@@ -21,7 +21,7 @@ import styles from "./Footer.module.css"
     ]
 
     const socialMediaList = [
-        { name: 'Insta', link: '/' },
+        { name: 'Instagram', link: '/' },
         { name: 'X', link: '/' },
         { name: 'YouTube', link: '/' },
     ]
@@ -29,49 +29,58 @@ import styles from "./Footer.module.css"
     return (
 
         <>
-            <footer className={styles.footerM}>
+            <footer className={styles.footer}>
 
-                <div>
+
+                <div className = {styles.columns}>
+
+                    <div className = {styles.column}>
+                        <h1 className={styles.shopName}>O-Shop</h1>
+                    </div>
                     
-                    <div>
-                        <h2>Contact</h2>
-                        <ul>
+                    <div className = {styles.column}>
+                        <h3 className = {styles.columnTitle}>Contact</h3>
+                        <ul className={styles.list}>
                                 {contactList.map((item) => (
                                     
-                                    <li key={item.name} className={styles.li}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <li key={item.name} className={styles.listItem}>
+                                    <a href={item.link} className={styles.link}>{item.name}</a>
                                 </li>
 
                                     ))}
                         </ul>
                     </div>
 
-                    <div>               
-                        <h2>About</h2>
-                        <ul>
+                    <div className = {styles.column}>               
+                        <h3 className = {styles.columnTitle}>About</h3>
+                        <ul className={styles.list}>
                                 {aboutList.map((item) => (
                                     
-                                    <li key={item.name} className={styles.li}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <li key={item.name} className={styles.listItem}>
+                                    <a href={item.link} className={styles.link}>{item.name}</a>
                                 </li>
 
                                     ))}
                         </ul>
                     </div>
 
-                    <div>
-                    <h2>Social Media</h2>
-                        <ul>
+                    <div className = {styles.column}>
+                        <h3 className = {styles.columnTitle}>Social Media</h3>
+                        <ul className={styles.list}>
                                 {socialMediaList.map((item) => (
                                     
-                                    <li key={item.name} className={styles.li}>
-                                    <a href={item.link}>{item.name}</a>
+                                    <li key={item.name} className={styles.listItem}>
+                                    <a href={item.link} className={styles.link}>{item.name}</a>
                                 </li>
 
                                     ))}
                         </ul>
                     </div>
 
+                </div>
+
+                <div className={styles.copyright}>
+                    <p>© 2026 O-shop. All rights reserved.</p>
                 </div>
             </footer>
 

@@ -18,7 +18,7 @@ function Header() {
     return(
         <header className={styles.header}>
 
-            <h1 className = {styles.h1Header} style={{ color: "#D4AF37" }}>O-Shop</h1>
+            <h1 className = {styles.h1Header}>O-Shop</h1>
 
             <nav className = {styles.navbar}>
 
@@ -26,7 +26,7 @@ function Header() {
 
                         {navItemsNav.map((item) => (
 
-                        <li key={item.name} className={styles.li}>
+                        <li key={item.name} className={styles.liHeader}>
                             <a href={item.link}>{item.name}</a>
                         </li>
 
@@ -38,7 +38,7 @@ function Header() {
 
                         {navItemsCtrl.map((item) => (
 
-                        <li key={item.name} className={styles.li}>
+                        <li key={item.name} className={styles.liHeader}>
                             <a href={item.link}>{item.name}</a>
                         </li>
 
