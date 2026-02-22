@@ -1,5 +1,7 @@
 import Header from "../components/Header/Header.jsx"
 import Footer from "../components/Footer/Footer.jsx"
+// temp:
+import ProductCard from "../components/ProductCard/ProductCard.jsx"
 
 function Home() {
 
@@ -10,9 +12,13 @@ function Home() {
         <>
         <Header />
 
-        <>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas esse sunt ullam. Tempora, eos sequi. Labore eaque, doloremque saepe incidunt harum libero obcaecati vitae! Magni necessitatibus blanditiis tempora incidunt aperiam?</p>
-        </>
+        <ProductCard
+            name="Cool Headphones"
+            price={59.99}
+            image="/images/products/product2.png"
+            description="High-quality wireless headphones."
+        />
+
 
         <Footer />
         </>
