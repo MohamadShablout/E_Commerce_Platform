@@ -9,7 +9,7 @@ function ProductCard({ name, price, image, description}) {
             
             <div className = {styles.upperHalf}>
                 <img className = {styles.productImage} src = {image} alt = {name} />
-                <button className = {styles.productFavorite}>&lt;3</button>
+                <button className = {styles.productFavorite}>❤</button>
             </div>
             
             <div className = {styles.lowerHalf}>                
