@@ -12,11 +12,12 @@ function ProductGrid() {
                 // mapping the data into a ProductCard
                 .map((product) => (
                     <ProductCard 
-                        key = {product.id} 
+                        key = {product.id} // key is for React to track items not actual props
+                        id = {product.id} // this is the actual id prop
                         name = {product.name} 
                         price = {product.price} 
                         image = {product.image} 
-                        description = {product.description} />
+                        shortDescription = {product.shortDescription} />
             ))}
         </div>
     );

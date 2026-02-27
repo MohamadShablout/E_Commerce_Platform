@@ -1,7 +1,9 @@
 import styles from "./ProductCard.module.css"
 import {useState} from "react"
+import { Link } from "react-router-dom"
+import products from "../../data/products"
 
-function ProductCard({ name, price, image, description}) {
+function ProductCard({ id, name, price, image, shortDescription}) {
 
     // Creating a variable for Favorite useState button
     const [isFav , setIsFav] = useState(false)
@@ -16,7 +18,10 @@ function ProductCard({ name, price, image, description}) {
         <div className = {styles.card}>
             
             <div className = {styles.upperHalf}>
+
+                <Link to = {`/product/${id}`}>
                 <img className = {styles.productImage} src = {image} alt = {name} />
+                </Link>
                 
                 <button 
                 className = {styles.productFavorite}
@@ -27,7 +32,7 @@ function ProductCard({ name, price, image, description}) {
             
             <div className = {styles.lowerHalf}>                
                 <div className = {styles.productName}>{name}</div>
-                <div className = {styles.productDescription}>{description}</div>
+                <div className = {styles.productShortDescription}>{shortDescription}</div>
                 <div className = {styles.productPrice}>${price}</div>
 
                 <button
