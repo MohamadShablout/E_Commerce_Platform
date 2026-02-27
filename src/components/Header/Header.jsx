@@ -14,7 +14,7 @@ function Header() {
     const navItemsCtrl = [
         { name: 'Cart', link: '/pages/cart' },
         { name: 'Account', link: '/pages/account' },
-        { name: 'menu', link: '/pages/menu' },
+        { name: 'Menu', link: '/pages/menu' },
     ];
 
     // Return Website Name and 2 lists for links 

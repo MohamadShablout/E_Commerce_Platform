@@ -1,5 +1,5 @@
 import styles from "./ProductCard.module.css"
-import React, {useState} from "react"
+import {useState} from "react"
 
 function ProductCard({ name, price, image, description}) {
 

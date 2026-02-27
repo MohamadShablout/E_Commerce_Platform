@@ -41,6 +41,7 @@ import { Link } from "react-router-dom"
                         </h1>
                     </div>
                     
+                    {/* Edit this for a real functional mailto/address/number  */}
                     <div className = {styles.column}>
                         <h3 className = {styles.columnTitle}>Contact</h3>
                         <ul className={styles.list}>
@@ -73,7 +74,7 @@ import { Link } from "react-router-dom"
                                 {socialMediaList.map((item) => (
                                     
                                     <li key={item.name} className={styles.listItem}>
-                                    <Link to={item.link} className={styles.link}>{item.name}</Link>
+                                    <a href={item.link} className={styles.link}>{item.name}</a>
                                 </li>
 
                                     ))}

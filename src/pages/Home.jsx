@@ -4,8 +4,6 @@ import ProductGrid from "../components/ProductGrid/ProductGrid.jsx"
 
 function Home() {
 
-    // TODO : Add Comments
-
     return (
 
         <>
