@@ -7,7 +7,6 @@ function ProductGrid() {
     return (
         <div className = {styles.grid}>
             {[...products]
-                .sort(() => Math.random() - 0.5)
                 .map((product) => (
                     <ProductCard 
                         key = {product.id} 
