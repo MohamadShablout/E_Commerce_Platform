@@ -6,7 +6,7 @@
       
 }
 
-.h1Header {
+.shopName {
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
     color: #D4AF37;
@@ -20,7 +20,7 @@
     margin-left: 2rem;
 }
 
-.navbar_links {
+.navbarLinks {
     list-style: none;
     display: flex;
 }
@@ -30,7 +30,7 @@
     padding-left: 1em;
 }
 
-a {
+.link {
     text-decoration: none;
     color: inherit;
 }

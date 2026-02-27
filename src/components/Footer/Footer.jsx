@@ -1,12 +1,12 @@
 import styles from "./Footer.module.css"
-
+import { Link } from "react-router-dom"
 
     function Footer() {
 
     // TODO : Add Actual links to all lists
     // ! '/' is just a place holder change it later
 
-    // TODO : Add Comments
+    // Lists for Links 
 
     const contactList = [
         { name: 'Email', link: '/' },
@@ -26,6 +26,7 @@ import styles from "./Footer.module.css"
         { name: 'YouTube', link: '/' },
     ]
 
+    // Return Website name and mapping Lists
     return (
 
         <>
@@ -35,7 +36,9 @@ import styles from "./Footer.module.css"
                 <div className = {styles.columns}>
 
                     <div className = {styles.column}>
-                        <h1 className={styles.shopName}>O-Shop</h1>
+                        <h1 className = {styles.shopName}>
+                            <Link to="/" className={styles.shopLink}>O-Shop</Link>
+                        </h1>
                     </div>
                     
                     <div className = {styles.column}>
@@ -44,7 +47,7 @@ import styles from "./Footer.module.css"
                                 {contactList.map((item) => (
                                     
                                     <li key={item.name} className={styles.listItem}>
-                                    <a href={item.link} className={styles.link}>{item.name}</a>
+                                    <Link to={item.link} className={styles.link}>{item.name}</Link>
                                 </li>
 
                                     ))}
@@ -57,7 +60,7 @@ import styles from "./Footer.module.css"
                                 {aboutList.map((item) => (
                                     
                                     <li key={item.name} className={styles.listItem}>
-                                    <a href={item.link} className={styles.link}>{item.name}</a>
+                                    <Link to={item.link} className={styles.link}>{item.name}</Link>
                                 </li>
 
                                     ))}
@@ -70,7 +73,7 @@ import styles from "./Footer.module.css"
                                 {socialMediaList.map((item) => (
                                     
                                     <li key={item.name} className={styles.listItem}>
-                                    <a href={item.link} className={styles.link}>{item.name}</a>
+                                    <Link to={item.link} className={styles.link}>{item.name}</Link>
                                 </li>
 
                                     ))}
