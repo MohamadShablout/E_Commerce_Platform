@@ -1,10 +1,15 @@
 import styles from "./Details.module.css"
+import { Link } from "react-router-dom"
 
 function Details({product}){
 
     return (
 
             <div className={styles.productDetail}>
+
+                <Link to="/">
+                    <button className={styles.backButton}>🡐</button>
+                </Link>
 
                 <div className={styles.imageSection}>
                     <img src={product.image} alt={product.name} />
