@@ -29,7 +29,7 @@ function Header() {
                 <ul className = {styles.navbarLinks}>
 
                         <li className={styles.list}>
-                            <p className={styles.link}>Categories</p>
+                            <button className={styles.navButton}>Categories</button>
 
                             <ul className={styles.dropdown}>
                                 
@@ -45,7 +45,7 @@ function Header() {
 
 
                         <li className={styles.list}>
-                            <p className={styles.link}>Collections</p>
+                            <button className={styles.navButton}>Collections</button>
                         </li>
 
                 </ul>

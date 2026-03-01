@@ -36,10 +36,20 @@
     color: inherit;
 }
 
+.navButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
 .dropdown {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 10px);
     left: 0;
     list-style: none;
     background-color: #2C2C2C;
@@ -48,6 +58,15 @@
     z-index: 10;
     border: 1px solid #D4AF37;
     border-radius: 4px;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
 }
 
 .list:hover .dropdown {

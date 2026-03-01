@@ -13,15 +13,15 @@ function Categories() {
     const categories = [...new Set(products.map(p => p.category))];
 
     // if the category does not exist return not found
-    const categoryCheck = categories.find(c => c === category);
-    if (!categoryCheck) return <h2>Category Not Found.</h2>
+    const categoryChecked = categories.find(c => c.toLowerCase() === category.toLowerCase());
+    if (!categoryChecked) return <h2>Category Not Found.</h2>
 
     return (
         <>
 
         <Header />
 
-        <ProductGridCategories category = { category }/>
+        <ProductGridCategories category = { categoryChecked }/>
         
         <Footer />
 

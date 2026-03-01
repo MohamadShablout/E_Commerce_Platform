@@ -4,11 +4,12 @@ import styles from "./ProductGrid.module.css"
 import ProductCard from "../ProductCard/ProductCard.jsx"
 import products from "../../data/products.js"
 
-function ProductGrid() {
+// if this function did not receive a value it would default to products
+function ProductGrid( { productList = products} ) {
 
     return (
         <div className = {styles.grid}>
-            {[...products] // Use a spread rather than using the list itself
+            {[...productList] // Use a spread rather than using the list itself
 
                 // mapping the data into a ProductCard
                 .map((product) => (

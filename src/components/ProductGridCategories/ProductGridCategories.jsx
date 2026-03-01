@@ -1,35 +1,23 @@
 import styles from "./ProductGridCategories.module.css"
 
 // importing the ProductCard component and the data from products
-import ProductCard from "../ProductCard/ProductCard.jsx"
+import ProductGrid from "../ProductGrid/ProductGrid.jsx"
 import products from "../../data/products.js"
 
-function ProductGrid( {category} ) {
+function ProductGridCategories( {category} ) {
 
     // filter and remove all products that don't have the same category into a new list
-    const categoryProducts = products.filter(p => p.category === category)
+    const categoryProducts = products.filter(p => p.category.toLowerCase() === category.toLowerCase())
 
     return (
 
         <>
         <h1 className={styles.categoryTitle}>{category}</h1>
 
-        <div className = {styles.grid}>
-            {[...categoryProducts] // Use a spread rather than using the list itself
+        <ProductGrid productList={categoryProducts}  />
 
-                // mapping the data into a ProductCard
-                .map((product) => (
-                    <ProductCard 
-                        key = {product.id} // key is for React to track items not actual props
-                        id = {product.id} // this is the actual id prop
-                        name = {product.name} 
-                        price = {product.price} 
-                        image = {product.image} 
-                        shortDescription = {product.shortDescription} />
-            ))}
-        </div>
         </>
     );
 }
 
-export default ProductGrid
+export default ProductGridCategories
