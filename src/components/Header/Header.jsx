@@ -1,14 +1,13 @@
 import styles from "./Header.module.css"
 import { Link } from "react-router-dom"
+import products from "../../data/products"
 
 function Header() {
     
 
-    // Website Navigation Links    
-    const navItemsNav = [
-        { name: 'Categories', link: '/categories' },
-        { name: 'Collections', link: '/collections' },
-    ];
+    // List for Categories 
+    const categories = [...new Set(products.map(p => p.category))];
+
 
     // User Personal Links
     const navItemsCtrl = [
@@ -29,24 +28,35 @@ function Header() {
 
                 <ul className = {styles.navbarLinks}>
 
-                        {navItemsNav.map((item) => (
+                        <li className={styles.list}>
+                            <p className={styles.link}>Categories</p>
 
-                        <li key={item.name} className={styles.liHeader}>
-                            <Link to={item.link} className={styles.link}>{item.name}</Link>
+                            <ul className={styles.dropdown}>
+                                
+                                {categories
+                                .map((item) => (
+                                <li key={item} className={styles.dropdownItem}>
+                                    <Link to={`/categories/${item}`} className={styles.link}>{item}</Link>
+                                </li>
+                                ))}
+
+                            </ul>
                         </li>
 
-                         ))}
+
+                        <li className={styles.list}>
+                            <p className={styles.link}>Collections</p>
+                        </li>
 
                 </ul>
 
                 <ul className={styles.navbarLinks}>
 
-                        {navItemsCtrl.map((item) => (
-
-                        <li key={item.name} className={styles.liHeader}>
+                        {navItemsCtrl
+                        .map((item) => (
+                        <li key={item.name} className={styles.list}>
                             <Link to={item.link} className={styles.link}>{item.name}</Link>
                         </li>
-
                          ))}
 
                 </ul>

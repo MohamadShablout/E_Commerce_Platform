@@ -1,14 +1,21 @@
-import styles from "./ProductGrid.module.css"
+import styles from "./ProductGridCategories.module.css"
 
 // importing the ProductCard component and the data from products
 import ProductCard from "../ProductCard/ProductCard.jsx"
 import products from "../../data/products.js"
 
-function ProductGrid() {
+function ProductGrid( {category} ) {
+
+    // filter and remove all products that don't have the same category into a new list
+    const categoryProducts = products.filter(p => p.category === category)
 
     return (
+
+        <>
+        <h1 className={styles.categoryTitle}>{category}</h1>
+
         <div className = {styles.grid}>
-            {[...products] // Use a spread rather than using the list itself
+            {[...categoryProducts] // Use a spread rather than using the list itself
 
                 // mapping the data into a ProductCard
                 .map((product) => (
@@ -21,6 +28,7 @@ function ProductGrid() {
                         shortDescription = {product.shortDescription} />
             ))}
         </div>
+        </>
     );
 }
 

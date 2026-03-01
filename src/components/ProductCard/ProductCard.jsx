@@ -1,7 +1,6 @@
 import styles from "./ProductCard.module.css"
 import {useState} from "react"
 import { Link } from "react-router-dom"
-import products from "../../data/products"
 
 function ProductCard({ id, name, price, image, shortDescription}) {
 
