@@ -1,5 +1,5 @@
-import styles from "./Footer.module.css"
-import { Link } from "react-router-dom"
+import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
     function Footer() {
 
@@ -12,19 +12,19 @@ import { Link } from "react-router-dom"
         { name: 'Email', link: '/' },
         { name: 'PhoneNumber', link: '/' },
         { name: 'Address', link: '/' }
-    ]
+    ];
 
     const aboutList = [
         { name: 'Term of Service', link: '/' },
         { name: 'Privacy Policy', link: '/' },
         { name: 'Career', link: '/' }
-    ]
+    ];
 
     const socialMediaList = [
         { name: 'Instagram', link: '/' },
         { name: 'X', link: '/' },
         { name: 'YouTube', link: '/' },
-    ]
+    ];
 
     // Return Website name and mapping Lists
     return (

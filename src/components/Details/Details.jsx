@@ -1,5 +1,5 @@
-import styles from "./Details.module.css"
-import { Link } from "react-router-dom"
+import styles from "./Details.module.css";
+import { Link } from "react-router-dom";
 
 function Details({product}){
 
@@ -24,7 +24,7 @@ function Details({product}){
                 </div>
 
             </div>
-    )
+    );
 }
 
 export default Details

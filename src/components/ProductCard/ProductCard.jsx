@@ -1,16 +1,16 @@
-import styles from "./ProductCard.module.css"
-import {useState} from "react"
-import { Link } from "react-router-dom"
+import styles from "./ProductCard.module.css";
+import {useState} from "react";
+import { Link } from "react-router-dom";
 
 function ProductCard({ id, name, price, image, shortDescription}) {
 
     // Creating a variable for Favorite useState button
-    const [isFav , setIsFav] = useState(false)
+    const [isFav , setIsFav] = useState(false);
 
     // the function used to update the variable
     const upDateFav = () => {
-        setIsFav(prev => !prev)
-    }
+        setIsFav(prev => !prev);
+    };
 
     return (
 

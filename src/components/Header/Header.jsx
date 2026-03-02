@@ -1,6 +1,6 @@
-import styles from "./Header.module.css"
-import { Link } from "react-router-dom"
-import products from "../../data/products"
+import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
+import products from "../../data/products";
 
 function Header() {
     

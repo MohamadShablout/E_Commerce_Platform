@@ -1,11 +1,11 @@
-import styles from "./ProductGrid.module.css"
+import styles from "./ProductGrid.module.css";
 
 // importing the ProductCard component and the data from products
-import ProductCard from "../ProductCard/ProductCard.jsx"
-import products from "../../data/products.js"
+import ProductCard from "../ProductCard/ProductCard.jsx";
+import products from "../../data/products.js";
 
 // if this function did not receive a value it would default to products
-function ProductGrid( { productList = products} ) {
+function ProductGrid( { productList = products } ) {
 
     return (
         <div className = {styles.grid}>
