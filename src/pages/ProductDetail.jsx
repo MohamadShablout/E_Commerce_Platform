@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom"
-import products from "../data/products.js"
-import Header from "../components/Header/Header.jsx"
-import Footer from "../components/Footer/Footer.jsx"
-import Details from "../components/Details/Details.jsx"
+import { useParams } from "react-router-dom";
+import products from "../data/products.js";
+import Header from "../components/Header/Header.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Details from "../components/Details/Details.jsx";
 
 function ProductDetail(){
 
